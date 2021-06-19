@@ -1,0 +1,9 @@
+dotnet tool list -g => Lista quais as ferramentas de apoio ao dotnet estão instaladas
+
+dotnet tool install --global dotnet-ef => Instala a ferramenta dotnet-ef
+
+dotnet ef migrations add InitialCreate -o Data/Migrations => Executa a criação da base de dados dentro do diretório Migrations dentro de Data, já existente.
+
+dotnet ef database update => Atualiza a base de dados já existente, caso essa não exista, o EF criará.
+
+git init => Cria um repositório Git local
