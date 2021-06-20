@@ -47,12 +47,14 @@ namespace API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
             }
 
+            app.UseStatusCodePagesWithReExecute("/erros/{0}");
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             //Provides access to files on API
-            //For Example: access to images on wwwroot directory
+            //Example: access to images on wwwroot directory
             app.UseStaticFiles();
 
             app.UseAuthorization();
