@@ -21,7 +21,7 @@ namespace API
         }
 
         public void ConfigureServices(IServiceCollection services)
-        {                        
+        {
             services.AddAutoMapper(typeof(MappingProfiles));
 
             services.AddControllers();
@@ -29,6 +29,13 @@ namespace API
 
             services.AddApplicationServices();
             services.AddSwaggerDocumentation();
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+                });
+            });
         }
 
 
@@ -45,6 +52,8 @@ namespace API
             //Provides access to files on API
             //Example: access to images on wwwroot directory
             app.UseStaticFiles();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
