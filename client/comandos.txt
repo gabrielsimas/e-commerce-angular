@@ -7,9 +7,10 @@
 07) npm install font-awesome => Instala o Font Awesome;
 08) http://json2ts.com/ => Site que converte Json para interfaces em Typescript;
 09) ng g m core => Cria o módulo de core. Criar no diretório ..client/src/app;
-10) ng g m shop => Cria o módulo de core. Criar no diretório ..client/src/shop;
-11) ng g m shared => Cria o módulo de core. Criar no diretório ..client/src/shared.
-12) ng g c shop --flat --skip-tests => Cria o Componente Shop. Criar dentro do diretório do Módulo Shop ..client/src/shop
+10) ng g m shop => Cria o módulo de core. Criar no diretório ..client/src/app/shop;
+11) ng g m shared => Cria o módulo de core. Criar no diretório ..client/src/app/shared.
+12) ng g c shop --flat --skip-tests => Cria o Componente Shop. Criar dentro do diretório do Módulo Shop ../client/src/shop
 13) ng g s shop --skip-tests --flat => Cria o Service shopService. Criar dentro do Ditetório do Módulo Shop em ../client/src/shop
-14) ng g m shop-routing --flat => Cria o roteamento para o Componente Shop. Criar dentro do Diretório do Módulo Shop em ../client/src/shop
+14) ng g m shop-routing --flat => Cria o roteamento para o Componente Shop. Criar dentro do Diretório do Módulo Shop em ../client/src/app/shop
 15) ng g c product-item --skip-tests => Cria o componente product-item dentro de Shop. Criar dentro do Diretório do Módulo Shop em ../client/src/shop
+16) ng g c paging-header --skip-tests => Cria um componente para paginação. Criar dentro de ../client/src/app/shared/components
