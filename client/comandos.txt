@@ -1,8 +1,14 @@
-1) npm install -g @angular/cli => Instalação do Angular CLI;
-2) ng new client => cria um novo projeto Angular chamado cliente via CLI;
-3) ng serve => Roda o Server interno do Angular => URL padrão: http://localhost:4200;
-4) ng add ngx-bootstrap => Use the Angular CLI ng add command for updating your Angular project;
-5) npm install ngx-bootstrap => Força a instalação do ngx-bootstrap;
-6) npm install bootstrap@4.6.0 => Instala o bootstrap 4.6.0;
-7) npm install font-awesome => Instala o Font Awesome;
-8) http://json2ts.com/ => Site que converte Json para interfaces em Typescript
+01) npm install -g @angular/cli => Instalação do Angular CLI;
+02) ng new client => cria um novo projeto Angular chamado cliente via CLI;
+03) ng serve => Roda o Server interno do Angular => URL padrão: http://localhost:4200;
+04) ng add ngx-bootstrap => Use the Angular CLI ng add command for updating your Angular project;
+05) npm install ngx-bootstrap => Força a instalação do ngx-bootstrap;
+06) npm install bootstrap@4.6.0 => Instala o bootstrap 4.6.0;
+07) npm install font-awesome => Instala o Font Awesome;
+08) http://json2ts.com/ => Site que converte Json para interfaces em Typescript;
+09) ng g m core => Cria o módulo de core. Criar no diretório ..client/src/app;
+10) ng g m shop => Cria o módulo de core. Criar no diretório ..client/src/shop;
+11) ng g m shared => Cria o módulo de core. Criar no diretório ..client/src/shared.
+12) ng g c shop --flat --skip-tests => Cria o Componente Shop. Criar dentro do diretório do Módulo Shop ..client/src/shop
+13) ng g s shop --skip-tests --flat => Cria o Service shopService. Criar dentro do Ditetório do Módulo Shop em ../client/src/shop
+14) ng g m shop-routing --flat => Cria o roteamento para o Componente Shop. Criar dentro do Diretório do Módulo Shop em ../client/src/shop
