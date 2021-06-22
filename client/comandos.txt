@@ -5,3 +5,4 @@
 5) npm install ngx-bootstrap => Força a instalação do ngx-bootstrap;
 6) npm install bootstrap@4.6.0 => Instala o bootstrap 4.6.0;
 7) npm install font-awesome => Instala o Font Awesome;
+8) http://json2ts.com/ => Site que converte Json para interfaces em Typescript
