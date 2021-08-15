@@ -8,7 +8,7 @@ namespace Core.Entities
         {
         }
 
-        public CustomerBasket(string id, List<BasketItem> items)
+        public CustomerBasket(string id, List<BasketItem> items = null)
         {
             Id = id;            
         }
