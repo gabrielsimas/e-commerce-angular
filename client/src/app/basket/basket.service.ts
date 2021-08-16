@@ -37,7 +37,7 @@ export class BasketService {
     return this.basketSource.value;
   }
 
-  adItemToBasket(item: IProduct, quantity = 1) {
+  addItemToBasket(item: IProduct, quantity = 1) {
     const itemToAdd: IBasketItem = this.mapProductItemToBasketItem(item, quantity);
     const basket = this.getCurrentBasketValue() ?? this.createBasket();
     basket.items = this.addOrUpdateItem(basket.items, itemToAdd, quantity);
