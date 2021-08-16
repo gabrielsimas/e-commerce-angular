@@ -30,3 +30,7 @@
 30) npm install bootswatch => Instala o Bootswatch na aplicação;
 31) npm install ngx-spinner => Instala um Spinner;
 32) ng g s busy --flat --skip-tests => Criação do Serviço Busy, criar em ...\client\src\app\core\services
+33) ng g m basket => Cria o módulo basket, criar em ...\client\src\app
+34) ng g m basket-routing --flat => Cria o módulo de roteamento de Basket, criar em ...\client\src\app\basket
+35) ng g c basket --flat --skip-tests => Cria um componente para Basket, criar em ...\client\src\app\basket
+36) ng g s basket --flat --skip-tests => Cria um serviço para Basket, criar em ...\client\src\app\basket
