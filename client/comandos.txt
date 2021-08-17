@@ -36,3 +36,7 @@
 36) ng g s basket --flat --skip-tests => Cria um serviço para Basket, criar em ...\client\src\app\basket
 37) npm install uuid => Instala o modo para use de Guid nas entidades, instalar em ..\client
 38) ng g c order-totals --skip-tests => Cria o Componente order-totals, criar em ..\client\src\app\shared\components
+39) ng g m checkout => Cria o Módulo de Checkout, criar em ..\client\src\app
+40) ng g m checkout-routing --flat => Cria o Módulo de roteamento do checkout, criar em ..\client\src\app\checkout
+41) ng g s checkout --flat --skip-tests => Cria o Serviço de Checkout, criar em ..\client\src\app\checkout;
+42) ng g c checkout --flat --skip-tests => Cria o Component de Checkout, criar em ..\client\src\app\checkout;
