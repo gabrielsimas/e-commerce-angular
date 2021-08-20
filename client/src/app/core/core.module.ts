@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { BreadcrumbModule } from 'xng-breadcrumb';
 import { RouterModule } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -18,6 +19,7 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
   imports: [    
     CommonModule,
     RouterModule,    
+    SharedModule,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',
       preventDuplicates: true
