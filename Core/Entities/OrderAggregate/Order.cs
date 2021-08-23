@@ -5,7 +5,7 @@ namespace Core.Entities.OrderAggregate
 {
     public class Order: BaseEntity
     {
-        public Order(string buyerEmail, Address shipToAddress, DeliveryMethod deliveryMethod, decimal subtotal)
+        public Order(string buyerEmail, Address shipToAddress, DeliveryMethod deliveryMethod, IReadOnlyList<OrderItem> orderItems, decimal subtotal)
         {
             BuyerEmail = buyerEmail;            
             ShipToAddress = shipToAddress;
