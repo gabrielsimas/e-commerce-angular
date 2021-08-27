@@ -13,4 +13,5 @@
 13) ng g s shop --skip-tests --flat => Cria o Service shopService. Criar dentro do Ditetório do Módulo Shop em ../client/src/shop
 14) ng g m shop-routing --flat => Cria o roteamento para o Componente Shop. Criar dentro do Diretório do Módulo Shop em ../client/src/app/shop
 15) ng g c product-item --skip-tests => Cria o componente product-item dentro de Shop. Criar dentro do Diretório do Módulo Shop em ../client/src/shop
-16) ng g c paging-header --skip-tests => Cria um componente para paginação. Criar dentro de ../client/src/app/shared/components
+16) ng g c paging-header --skip-tests => Cria um componente para o cabeçalho com paginação. Criar dentro de ../client/src/app/shared/components
+17) ng g c pager --skip-tests => Cria um componente para a paginação da lista de Produtos. Criar dentro de ../client/src/app/shared/components
