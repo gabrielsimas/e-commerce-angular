@@ -2,10 +2,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Dtos;
+using API.Errors;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -37,6 +39,8 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse),StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
@@ -45,8 +49,8 @@ namespace API.Controllers
 
             return _mapper.Map<Product, ProductToReturnDto>(product);
         }
-        //TODO: Separar em outra Controller
-        //TODO: Converter para DTOs e AutoMapper
+        //TODO: Separate to another Controller
+        //TODO: Converts Entity to DTOs and use AutoMapper to Converts
         [HttpGet("brands")]
         public async Task<ActionResult<List<Product>>> GetProductBrands()
         {
@@ -55,8 +59,8 @@ namespace API.Controllers
             return Ok(productBrands);
         }
         
-        //TODO: Separar em outra Controller
-        //TODO: Converter para DTOs e AutoMapper
+        //TODO: Separate to another Controller
+        //TODO: Converts Entity to DTOs and use AutoMapper to Converts
         [HttpGet("types")]
         public async Task<ActionResult<List<Product>>> GetProductTypes()
         {
