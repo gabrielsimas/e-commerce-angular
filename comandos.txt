@@ -7,3 +7,7 @@ dotnet ef migrations add InitialCreate -o Data/Migrations => Executa a criação
 dotnet ef database update => Atualiza a base de dados já existente, caso essa não exista, o EF criará.
 
 git init => Cria um repositório Git local
+
+dotnet ef database drop -p Infrastructure -s API => Remove o migrations da camada de API
+dotnet ef migrations remove -p Infrastructure -s API => Remove o snapshot da camada de API.
+dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations => Gera o Banco de Dados via Migrations
