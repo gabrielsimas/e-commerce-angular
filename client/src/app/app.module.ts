@@ -1,3 +1,4 @@
+import { BreadcrumbModule } from 'xng-breadcrumb';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { HomeModule } from './home/home.module';
 import { CoreModule } from './core/core.module';
@@ -11,15 +12,15 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent    
   ],
-  imports: [
+  imports: [        
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,    
-    HomeModule
+    HomeModule,
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true}
