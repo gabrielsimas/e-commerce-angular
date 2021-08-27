@@ -51,6 +51,10 @@ namespace API
 
             app.UseRouting();
 
+            //Provides access to files on API
+            //For Example: access to images on wwwroot directory
+            app.UseStaticFiles();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
