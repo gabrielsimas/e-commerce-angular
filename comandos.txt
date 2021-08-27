@@ -12,3 +12,7 @@
 7) dotnet ef migrations remove -p Infrastructure -s API => Remove o snapshot da camada de API.
 8) dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations => Gera o Banco de Dados via Migrations
 9) dotnet add package StackExchange.Redis --version 2.0.601 => instala o Redis. Instalar na Camada de Infrastructure
+10) Instalar o Microsoft.AspNetCore.EntityFrameworkCore v5.0.3 da Nuget Gallery no Projeto Core;
+11) Instalar o Microsoft.AspNetCore.Identity v2.0.2 da Nuget Gallery no Projeto Infrastructure;
+12) Instalar o Microsoft.IdentityModel.Tokens v6.8.0 da Nuget Gallery no Projeto Infrastructure;
+13) Instalar o Microsoft.IdentityModel.Tokens.Jwt v6.8.0 da Nuget Gallery no Projeto Infrastructure;
