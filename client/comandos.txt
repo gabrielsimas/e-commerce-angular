@@ -45,3 +45,4 @@
 45) ng g s account --flat --skip-tests => Cria o Serviço para Account, criar em ..\client\src\app\account
 46) ng g c login --skip-tests => Cria o Componente de Login, criar em ..\client\src\app\account
 47) ng g c register --skip-tests => Cria o Componente Register, criar em ..\client\src\app\account
+48) ng g c text-input --skip-tests => Cria o componente Text-Input, criar em ..\client\src\app\shared\components
