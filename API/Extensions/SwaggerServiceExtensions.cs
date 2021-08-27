@@ -31,6 +31,7 @@ namespace API.Extensions
                 {
                     {securitySchema, new[]{"Bearer"}}
                 };
+                c.AddSecurityRequirement(securityRequirements);
             });
 
             return services;
