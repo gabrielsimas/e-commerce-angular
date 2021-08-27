@@ -22,4 +22,5 @@
 22) ng g c not-found --skip-tests => Cria um component para aviso de Not Found, criar em ../client\src\app\core
 23) ng g c server-error --skip-tests => Cria um component para aviso de Server Error, criar em ../client\src\app\core
 24) ng g interceptor error --skip-tests => Cria um interceptor chamado error, criar em ../client\src\app\core\interceptors
-25) npm install ngx-toaster => Instala o NGX Toaster para as mensagens de erro
+25) npm install ngx-toaster => Instala o NGX Toaster para as mensagens de erro;
+26) ng g c section-header => Cria o Componente section-header, criar em ../client\src\app\core;
