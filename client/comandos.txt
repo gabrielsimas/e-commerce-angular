@@ -19,3 +19,5 @@
 19) ng g[enerate] c[omponent] home => Cria um Componente chamado Home no diretório ../cliente/src/app/home;
 20) ng g c product-details --skip-tests => Cria um componente para detalhes do Produto no diretório ../client/src/app/shop;
 21) ng g c test-error --skip-tests => Cria um componente para testar o tratamento de erros, criar em ../client\src\app\core
+22) ng g c not-found --skip-tests => Cria um component para aviso de Not Found, criar em ../client\src\app\core
+23) ng g c server-error --skip-tests => Cria um component para aviso de Server Error, criar em ../client\src\app\core
