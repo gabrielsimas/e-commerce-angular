@@ -1,13 +1,14 @@
-dotnet tool list -g => Lista quais as ferramentas de apoio ao dotnet estão instaladas
+1) dotnet tool list -g => Lista quais as ferramentas de apoio ao dotnet estão instaladas
 
-dotnet tool install --global dotnet-ef => Instala a ferramenta dotnet-ef
+2) dotnet tool install --global dotnet-ef => Instala a ferramenta dotnet-ef
 
-dotnet ef migrations add InitialCreate -o Data/Migrations => Executa a criação da base de dados dentro do diretório Migrations dentro de Data, já existente.
+3) dotnet ef migrations add InitialCreate -o Data/Migrations => Executa a criação da base de dados dentro do diretório Migrations dentro de Data, já existente.
 
-dotnet ef database update => Atualiza a base de dados já existente, caso essa não exista, o EF criará.
+4) dotnet ef database update => Atualiza a base de dados já existente, caso essa não exista, o EF criará.
 
-git init => Cria um repositório Git local
+5) git init => Cria um repositório Git local
 
-dotnet ef database drop -p Infrastructure -s API => Remove o migrations da camada de API
-dotnet ef migrations remove -p Infrastructure -s API => Remove o snapshot da camada de API.
-dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations => Gera o Banco de Dados via Migrations
+6) dotnet ef database drop -p Infrastructure -s API => Remove o migrations da camada de API
+7) dotnet ef migrations remove -p Infrastructure -s API => Remove o snapshot da camada de API.
+8) dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations => Gera o Banco de Dados via Migrations
+9) dotnet add package StackExchange.Redis --version 2.0.601 => instala o Redis. Instalar na Camada de Infrastructure
