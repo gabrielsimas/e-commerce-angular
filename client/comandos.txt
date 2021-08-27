@@ -47,3 +47,11 @@
 47) ng g c register --skip-tests => Cria o Componente Register, criar em ..\client\src\app\account
 48) ng g c text-input --skip-tests => Cria o componente Text-Input, criar em ..\client\src\app\shared\components
 49) ng g g auth --skip-tests => Cria o Route Guard Auth, criar em ..\client\src\app\core\guards e escolher a primeira opção "CanActivate"
+50) https://material.angular.io/cdk/stepper/overview => Como utilizar um Stepper através do componente CdkStepper
+51) ng add @angular/cdk => Instala o Angular CDK, criar em ..\client
+52) ng g c stepper --skip-tests => Cria o Component Stepper, criar em ..\client\src\app\shared\components
+53) ng g c checkout-address --skip-tests => Cria o Componente CheckoutAddress, criar em ..\client\src\app\checkout
+54) ng g c checkout-delivery --skip-tests => Cria o Componente CheckoutDelivery, criar em ..\client\src\app\checkout
+55) ng g c checkout-review --skip-tests => Cria o Componente CheckoutReview, criar em ..\client\src\app\checkout
+56) ng g c checkout-payment --skip-tests => Cria o Componente CheckoutPayment, criar em ..\client\src\app\checkout
+57) ng g c checkout-success --skip-tests => Cria o Componente CheckoutSuccess, criar em ..\client\src\app\checkout
