@@ -1,3 +1,7 @@
 1) npm install -g @angular/cli => Instalação do Angular CLI;
 2) ng new client => cria um novo projeto Angular chamado cliente via CLI;
-3) ng serve => Roda o Server interno do Angular => URL padrão: http://localhost:4200
+3) ng serve => Roda o Server interno do Angular => URL padrão: http://localhost:4200;
+4) ng add ngx-bootstrap => Use the Angular CLI ng add command for updating your Angular project;
+5) npm install ngx-bootstrap => Força a instalação do ngx-bootstrap;
+6) npm install bootstrap@4.6.0 => Instala o bootstrap 4.6.0;
+7) npm install font-awesome => Instala o Font Awesome;
