@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-error.component.scss']
 })
 export class TestErrorComponent implements OnInit {
-  baseUrl = environment.apiUrl
+  baseUrl = environment.apiUrl;
+  validationErrors: any;
 
   constructor(private http: HttpClient) { }
 
@@ -36,6 +37,7 @@ export class TestErrorComponent implements OnInit {
       console.log(response);
     }, error => {
       console.error(error);
+      this.validationErrors = error.errors;
     })
   }
 
