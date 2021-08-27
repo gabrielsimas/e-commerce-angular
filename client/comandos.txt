@@ -35,3 +35,4 @@
 35) ng g c basket --flat --skip-tests => Cria um componente para Basket, criar em ...\client\src\app\basket
 36) ng g s basket --flat --skip-tests => Cria um serviço para Basket, criar em ...\client\src\app\basket
 37) npm install uuid => Instala o modo para use de Guid nas entidades, instalar em ..\client
+38) ng g c order-totals --skip-tests => Cria o Componente order-totals, criar em ..\client\src\app\shared\components
