@@ -13,8 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers
 {    
     public class ProductsController : BaseApiController
-    {
-        private readonly IProductRepository _repo;
+    {        
         private readonly IGenericRepository<Product> _productsRepo;
         private readonly IGenericRepository<ProductBrand> _productBrandRepo;
         private readonly IGenericRepository<ProductType> _productTypeRepo;
@@ -29,9 +28,9 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort)
+        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort, int? brandId, int? typeId)
         {
-            ProductsWithTypesAndBrandsSpecification spec = new ProductsWithTypesAndBrandsSpecification(sort);
+            ProductsWithTypesAndBrandsSpecification spec = new ProductsWithTypesAndBrandsSpecification(sort, brandId, typeId);
 
             var products = await _productsRepo.ListAsync(spec);
 
