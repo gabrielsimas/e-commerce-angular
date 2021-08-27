@@ -25,3 +25,6 @@
 25) npm install ngx-toaster => Instala o NGX Toaster para as mensagens de erro;
 26) ng g c section-header => Cria o Componente section-header, criar em ../client\src\app\core;
 27) npm install --save xng-breadcrumb => Instala o pacote para criar breadcrumbs de forma automática no Angular;
+28) Site com temas gratuitos em Bootstrap: https://bootswatch.com/;
+29) Sites no qual podemos criar Temas para o Bootstrap: https://themestr.app/;
+30) npm install bootswatch => Instala o Bootswatch na aplicação;
