@@ -18,3 +18,4 @@
 13) Instalar o Microsoft.IdentityModel.Tokens.Jwt v6.8.0 da Nuget Gallery no Projeto Infrastructure;
 14) dotnet ef migrations add IdentityInitial -p Infrastructure -s API -c AppIdentityDbContext -o Identity/Migrations => Gera o Banco de dados do Identity baseado nas configurações na Startup.cs
 15) https://regexlib.com/ => Site contendo muitos modelos prontos de Expressões regulares por assunto.
+16) dotnet ef migrations add OrderEntityAdded -p Infrastructure -s API -c StoreContext => Atualiza a base de dados com a estrutura do Agregado de Pedidos
