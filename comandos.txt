@@ -16,3 +16,4 @@
 11) Instalar o Microsoft.AspNetCore.Identity v2.0.2 da Nuget Gallery no Projeto Infrastructure;
 12) Instalar o Microsoft.IdentityModel.Tokens v6.8.0 da Nuget Gallery no Projeto Infrastructure;
 13) Instalar o Microsoft.IdentityModel.Tokens.Jwt v6.8.0 da Nuget Gallery no Projeto Infrastructure;
+14) dotnet ef migrations add IdentityInitial -p Infrastructure -s API -c AppIdentityDbContext -o Identity/Migrations => Gera o Banco de dados do Identity baseado nas configurações na Startup.cs
