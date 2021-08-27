@@ -34,3 +34,4 @@
 34) ng g m basket-routing --flat => Cria o módulo de roteamento de Basket, criar em ...\client\src\app\basket
 35) ng g c basket --flat --skip-tests => Cria um componente para Basket, criar em ...\client\src\app\basket
 36) ng g s basket --flat --skip-tests => Cria um serviço para Basket, criar em ...\client\src\app\basket
+37) npm install uuid => Instala o modo para use de Guid nas entidades, instalar em ..\client
