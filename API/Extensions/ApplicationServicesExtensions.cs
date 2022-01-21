@@ -26,7 +26,7 @@ namespace API.Extensions
                     string[] errors = actionContext.ModelState
                         .Where(e => e.Value.Errors.Count > 0)
                         .SelectMany(x => x.Value.Errors)
-                        .Select(X => X.ErrorMessage).ToArray();
+                        .Select(x => x.ErrorMessage).ToArray();
 
                     var errorResponse = new ApiValidationErrorResponse
                     {
