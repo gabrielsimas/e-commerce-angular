@@ -55,3 +55,5 @@
 55) ng g c checkout-review --skip-tests => Cria o Componente CheckoutReview, criar em ..\client\src\app\checkout
 56) ng g c checkout-payment --skip-tests => Cria o Componente CheckoutPayment, criar em ..\client\src\app\checkout
 57) ng g c checkout-success --skip-tests => Cria o Componente CheckoutSuccess, criar em ..\client\src\app\checkout
+
+58) ng g c basket-summary --skip-tests => Cria o Componente BasketSummary, criar em ..\cliente\src\app\shared
