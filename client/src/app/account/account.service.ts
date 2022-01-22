@@ -67,10 +67,10 @@ export class AccountService {
   }
 
   getUserAddress() {
-    return this.http.get<IAddress>(`${this.baseUrl}accout/address`);
+    return this.http.get<IAddress>(`${this.baseUrl}account/address`);
   }
 
   updateUserAddress(address: IAddress) {
-    return this.http.post<IAddress>(`${this.baseUrl}accout/address`,address);
+    return this.http.put<IAddress>(`${this.baseUrl}account/address`,address);
   }
 }
